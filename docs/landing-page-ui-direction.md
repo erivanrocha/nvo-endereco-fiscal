@@ -2,6 +2,8 @@
 
 > **Fontes estratégicas:** `docs/landing-page-strategy.md`, `docs/landing-page-wireframe.md` e `docs/landing-page-copy.md`.
 >
+> **Referência de marca:** Manual de Identidade Visual do NVO e arquivo oficial do logotipo enviado ao projeto.
+>
 > **Status:** direção de arte e UI para implementação.
 >
 > **Escopo:** definir decisões visuais e de experiência antes da implementação React/CSS.
@@ -10,19 +12,18 @@
 
 ---
 
-## 0. Nota sobre os ativos de marca disponíveis
+# 0. Princípio de fidelidade à marca
 
-Foram considerados os ativos visuais disponíveis no projeto/conversa, incluindo fotografias reais da fachada do NVO e referências visuais da própria landing.
+A landing page deve parecer inequivocamente pertencente ao **NVO Coworking**. A identidade visual não deve ser reinterpretada para seguir tendências de landing pages, SaaS ou startups.
 
-As fotografias reais disponíveis mostram o imóvel/estrutura física do NVO e devem ser tratadas como ativos de prova, não como decoração genérica.
+O **Manual de Identidade Visual do NVO** é a referência normativa para a marca. O arquivo oficial do logotipo fornecido ao projeto deve ser utilizado como ativo de marca.
 
-**O manual de identidade visual formal não foi localizado no repositório `nvo-endereco-fiscal` nem nos arquivos disponíveis para consulta nesta etapa.** A referência visual existente mostra uma identidade baseada visualmente em **azul-marinho, dourado/amarelo e verde**, além do logotipo NVO. Entretanto, **não serão inventados códigos HEX, fontes oficiais, espaçamentos de proteção ou regras formais do logotipo**.
+O manual apresenta a marca em duas composições:
 
-Onde o manual formal for necessário para uma decisão exata, usar:
+- **versão vertical — uso preferencial**;
+- **versão horizontal — indicada quando a versão vertical apresentar dificuldades de aplicação**. fileciteturn42file0L14-L14
 
-`[VALIDAR NO MANUAL]`
-
-Antes da publicação, o manual oficial deve ser confrontado com esta direção.
+A direção estratégica e de UX definida anteriormente permanece válida. A atualização deste documento corrige apenas as decisões visuais que estavam em conflito com o manual.
 
 ---
 
@@ -30,7 +31,7 @@ Antes da publicação, o manual oficial deve ser confrontado com esta direção.
 
 ## Conceito: **estrutura real, decisão simples**
 
-A página deve transmitir que o visitante não está diante de uma promessa digital abstrata. Está diante de um serviço empresarial oferecido por uma empresa que possui **estrutura física real, imóvel próprio e 16 anos de mercado**.
+A página deve transmitir que o visitante está diante de um serviço empresarial oferecido por uma empresa com **estrutura física real, imóvel próprio e 16 anos de mercado**.
 
 A direção visual deve combinar:
 
@@ -41,13 +42,11 @@ A direção visual deve combinar:
 - simplicidade;
 - proximidade suficiente para tornar o WhatsApp uma continuação natural da experiência.
 
-A estética não deve parecer uma startup recém-criada, um SaaS ou uma página de tecnologia.
-
 ### Princípio visual
 
-**Fotografia real + tipografia forte + espaço em branco + elementos de marca contidos + informação comercial clara.**
+**Fotografia real + tipografia LEIXO + identidade NVO + espaço em branco + informação comercial clara.**
 
-A página deve parecer um produto comercial do próprio NVO, não uma peça publicitária independente que poderia pertencer a qualquer empresa.
+A estética não deve parecer uma startup recém-criada, um SaaS, uma fintech ou uma página genérica de coworking.
 
 ---
 
@@ -57,163 +56,166 @@ A personalidade deve ser:
 
 - **profissional**, sem aparência corporativa fria;
 - **confiável**, sem linguagem visual defensiva;
-- **contemporânea**, sem depender de tendências de design;
+- **contemporânea**, sem depender de tendências;
 - **objetiva**, sem excesso de elementos;
 - **real**, valorizando o imóvel e a estrutura existentes;
 - **comercial**, porque a finalidade é conversão;
 - **discreta**, evitando pressão artificial.
 
-### O que evitar
+### Evitar
 
+- estética genérica de SaaS/fintech;
 - gradientes neon;
-- glassmorphism excessivo;
-- fundos 3D;
+- glassmorphism como linguagem dominante;
 - ilustrações isométricas genéricas;
-- mockups de computadores/celulares sem função;
+- mockups sem função;
 - excesso de ícones;
 - animações chamativas;
-- selos como “oferta imperdível”;
 - contadores regressivos;
-- badges de escassez;
-- estética de SaaS/fintech;
-- fotos de pessoas de banco de imagens como protagonistas.
+- escassez artificial;
+- selos promocionais;
+- fotos de banco de imagens como protagonistas.
 
 ---
 
-# 3. Paleta de cores
+# 3. Paleta de cores — conforme o Manual NVO
 
-## Direção cromática
+A orientação anterior que utilizava **azul-marinho** como cor estrutural está **revogada**.
 
-A referência visual disponível apresenta três famílias cromáticas principais:
+O manual oficial define as cores institucionais da marca como:
 
-1. **Azul-marinho NVO** — cor estrutural e institucional;
-2. **Dourado/amarelo NVO** — cor de destaque e ênfase;
-3. **Verde de conversão/WhatsApp** — utilizado exclusivamente onde a ação estiver associada ao WhatsApp.
+- **Amarelo — Pantone 715 C**;
+- **Cinza — Pantone 440 C**. fileciteturn42file0L15-L15
 
-A hierarquia deve ser:
+O manual apresenta também referências CMYK e RGB para reprodução das cores e orienta que a precisão seja preservada. fileciteturn42file0L15-L15
 
-**azul-marinho > branco/neutros > dourado > verde de WhatsApp.**
+## Hierarquia cromática da interface
 
-O verde não deve assumir o papel de cor institucional principal. Ele funciona como código visual da ação de conversa.
+1. **Cinza institucional NVO** — cor estrutural e de contraste;
+2. **Amarelo institucional NVO** — destaque e identificação visual;
+3. **Branco/neutros** — áreas de respiro e leitura;
+4. **Verde do WhatsApp** — exclusivamente como cor funcional do canal de conversão.
 
-### Tokens necessários
+O verde do WhatsApp **não integra a identidade institucional do NVO**.
 
-- `brand-primary`: azul-marinho oficial — **[VALIDAR NO MANUAL]**
-- `brand-accent`: dourado/amarelo oficial — **[VALIDAR NO MANUAL]**
-- `surface`: branco — pode ser utilizado como neutro estrutural
-- `surface-muted`: neutro muito claro — **[VALIDAR NO MANUAL]** caso o manual defina neutros
-- `text-primary`: azul-marinho ou cor de texto oficial — **[VALIDAR NO MANUAL]**
-- `text-secondary`: neutro de leitura — **[VALIDAR NO MANUAL]**
-- `whatsapp`: verde oficial do botão/canal — utilizar referência oficial do WhatsApp ou token definido no sistema; não tratá-lo como cor de marca NVO
+### Regra
 
-### Regra de contraste
+O amarelo deve funcionar como elemento de identidade e ênfase. Não deve ser utilizado como cor dominante para grandes blocos de texto corrido.
 
-Texto branco sobre azul-marinho deve ser reservado a áreas em que o contraste seja adequado.
+O cinza deve fornecer estrutura e contraste.
 
-Dourado deve funcionar como **ênfase**, não como cor para grandes blocos de texto corrido.
+Não criar uma terceira cor institucional para substituir ou complementar as cores definidas no manual.
+
+### Reprodução digital
+
+Na implementação, os valores digitais devem ser obtidos diretamente das referências CMYK/RGB do manual, sem aproximações arbitrárias. fileciteturn42file0L15-L15
 
 ---
 
-# 4. Tipografia e hierarquia
+# 4. Tipografia
 
-O manual oficial não foi localizado. Portanto, a família tipográfica institucional deve ser:
+## Família oficial
 
-**[VALIDAR NO MANUAL]**
+A família tipográfica definida para a identidade visual do NVO Coworking é **LEIXO**. O manual apresenta sua utilização em textos, anúncios publicitários, cartazes, títulos e textos de formulários. fileciteturn42file0L16-L16
 
-Até essa validação, a implementação deve preservar uma arquitetura tipográfica simples e contemporânea, sem misturar várias famílias.
+A implementação deve utilizar o arquivo/licença de LEIXO disponível e autorizado para o projeto.
 
-## Hierarquia recomendada
+Se houver necessidade de escolher uma variante específica não estabelecida pelos materiais fornecidos, usar **[VALIDAR NO MANUAL]** em vez de inferir.
+
+## Hierarquia
 
 ### H1
 
-- grande;
-- pesado/semi-pesado;
+- maior elemento tipográfico da página;
+- forte;
 - poucas linhas;
-- máximo contraste;
-- deve ser o principal elemento verbal da primeira tela.
+- alto contraste;
+- prioridade máxima no Hero.
 
 ### H2
 
-- forte, mas claramente subordinado ao H1;
-- utilizado para marcar a evolução da narrativa.
+- forte, subordinado ao H1;
+- marca cada mudança relevante da narrativa.
 
 ### H3
 
-- usado em itens, objeções e microblocos;
-- evitar excesso de peso tipográfico.
+- utilizado em cards, benefícios e objeções;
+- evitar excesso de peso.
 
 ### Corpo
 
 - leitura confortável em mobile;
+- parágrafos curtos;
 - largura de linha controlada;
-- alto contraste;
-- parágrafos curtos.
+- alto contraste.
 
 ### Preço
 
-O preço terá hierarquia própria e deverá ser visualmente dominante dentro da seção de oferta, mas não poderá competir com o H1 no Hero.
+O preço terá hierarquia própria e será dominante dentro da oferta, sem competir com o H1 no Hero.
 
 ---
 
-# 5. Uso correto do logotipo
+# 5. Uso do logotipo
 
-O logotipo NVO deve funcionar como elemento de identificação, não como elemento decorativo.
+O arquivo oficial do logotipo enviado ao projeto deve ser usado na implementação.
 
-## Regras
+O manual determina a preferência pela **versão vertical** e permite a utilização da **versão horizontal quando a aplicação da vertical apresentar dificuldades**. fileciteturn42file0L14-L14
 
-- utilizar o arquivo oficial do logotipo;
+## Aplicação na landing
+
+- priorizar a versão vertical quando a área disponível permitir;
+- utilizar a horizontal quando a composição do espaço justificar a orientação prevista no manual;
 - não redesenhar o símbolo;
-- não alterar proporções;
-- não aplicar efeitos;
-- não distorcer;
-- não inclinar;
-- não adicionar sombras ao logotipo;
-- respeitar área de proteção definida no manual;
-- utilizar a versão adequada ao fundo.
+- não alterar as proporções do arquivo oficial;
+- não criar novas composições da marca.
 
-### Versões
+## Versões monocromáticas
 
-- logotipo sobre fundo claro: **[VALIDAR NO MANUAL]**;
-- logotipo sobre fundo azul-marinho: **[VALIDAR NO MANUAL]**;
-- versão monocromática: **[VALIDAR NO MANUAL]**.
+O manual prevê versões monocromáticas quando houver limitações quanto ao número de cores disponível em processos de impressão ou gravação. Apresenta versões vertical e horizontal monocromáticas em preto. fileciteturn42file0L17-L17
+
+Para a landing digital, a versão institucional em cores deve ser a referência sempre que a aplicação for adequada; a versão monocromática só deve ser escolhida quando houver razão de aplicação compatível com a orientação do manual.
+
+## Aplicação em negativo
+
+O manual determina preferência pelo uso da marca em suas cores sobre fundo branco. Quando houver necessidade de aplicação sobre fundo, apresenta versões em negativo sobre cinza e amarelo. fileciteturn42file0L18-L18
+
+A implementação deve usar somente versões oficiais do arquivo fornecido, sem criar combinações novas.
 
 ### Header
 
-O logo deve aparecer no canto esquerdo do header, com presença suficiente para identificar a marca sem ocupar espaço excessivo.
+O logotipo deve ocupar posição de identificação clara no header, sem competir com o conteúdo principal.
 
-No mobile, manter o logo visível e reduzir a navegação ao essencial.
+No mobile, permanecer visível e a navegação deve ser reduzida ao essencial.
 
 ---
 
 # 6. Tratamento das fotografias reais
 
-As fotografias reais do NVO são parte central da estratégia visual porque comprovam que o serviço está ligado a uma estrutura física existente.
+As fotografias reais do NVO são ativos centrais da direção de arte. Elas sustentam visualmente a ideia de **estrutura física real** e devem aparecer como prova, não como decoração genérica.
 
-As fotos disponíveis incluem imagens da fachada/edifício do NVO. fileciteturn35file0L1-L6 fileciteturn35file1L7-L12
+O próprio manual apresenta aplicações da identidade em ambientes físicos de coworking. fileciteturn43file0L11-L13
 
 ## Princípios
 
-- priorizar fotografia real do imóvel;
-- não substituir por banco de imagens;
+- utilizar prioritariamente fotografias reais do NVO;
+- não substituir as fotos por banco de imagens;
 - não criar imagens artificiais do imóvel;
-- não aplicar filtros que descaracterizem a fotografia;
-- correção leve de exposição/contraste pode ser feita quando necessária;
-- preservar elementos arquitetônicos reconhecíveis;
-- não cortar o edifício de forma que pareça outro local.
+- não aplicar filtros que descaracterizem as fotos;
+- correções técnicas leves de exposição/contraste são aceitáveis quando necessárias;
+- preservar os elementos arquitetônicos reconhecíveis;
+- não enquadrar de maneira que o imóvel pareça outro local.
 
 ## Hero
 
-A fachada deve ser uma das imagens protagonistas.
+A fotografia real da estrutura deve ser protagonista ou co-protagonista do Hero.
 
-A composição pode usar uma fotografia real em grande área, com camada azul-marinho discreta quando necessária para garantir legibilidade do texto.
+Quando houver texto sobre imagem, o tratamento deve garantir legibilidade sem esconder ou descaracterizar a estrutura.
 
-O overlay deve ser suficientemente leve para que o imóvel continue reconhecível.
+## Credibilidade
 
-## Outras aparições
+Utilizar outra fotografia/ângulo quando disponível, evitando repetir a mesma imagem apenas para preencher espaço.
 
-Uma segunda fotografia pode aparecer na seção de confiança, preferencialmente mostrando outro ângulo da estrutura para reforçar que não se trata da mesma imagem repetida.
-
-A fotografia histórica disponível também pode ser utilizada como contexto institucional se houver uma função narrativa clara, mas não deve ser usada para representar a aparência atual do imóvel sem contextualização. fileciteturn35file3L19-L24
+Fotografia histórica só deve ser utilizada se houver contexto claro para não ser confundida com a aparência atual do imóvel.
 
 ---
 
@@ -221,19 +223,19 @@ A fotografia histórica disponível também pode ser utilizada como contexto ins
 
 ## Objetivo
 
-Fazer o visitante compreender em poucos segundos:
+Permitir que o visitante compreenda rapidamente:
 
-- Endereço Fiscal;
-- endereço empresarial em Natal;
-- não necessariamente manter escritório físico;
-- R$ 99/mês;
-- próximo passo: WhatsApp.
+- que se trata de Endereço Fiscal;
+- que a solução é um endereço empresarial em Natal;
+- que não é necessário manter um escritório físico para a proposta apresentada;
+- que o preço é R$ 99/mês;
+- que o próximo passo é falar pelo WhatsApp.
 
-## Estrutura desktop
+## Desktop
 
 ```text
 ┌──────────────────────────────────────────────────────────────┐
-│ LOGO NVO                         navegação mínima / CTA       │
+│ LOGO NVO                                      CTA WhatsApp    │
 ├──────────────────────────────────────────────────────────────┤
 │                                                              │
 │  TEXTO PRINCIPAL                    FOTOGRAFIA REAL DO NVO   │
@@ -254,17 +256,13 @@ Fazer o visitante compreender em poucos segundos:
 └──────────────────────────────────────────────────────────────┘
 ```
 
-## Composição
+A composição pode ser aproximadamente 50/50 entre conteúdo e fotografia, desde que a leitura e a fotografia permaneçam equilibradas.
 
-A fotografia deve ocupar aproximadamente metade da composição em desktop, podendo avançar visualmente para o fundo do Hero.
-
-O texto deve permanecer em área de alto contraste.
-
-Não adicionar quatro ou cinco selos de benefícios no Hero. Eles serão explicados depois.
+Não sobrecarregar o Hero com todos os benefícios.
 
 ## Mobile
 
-A prioridade deve ser:
+Prioridade:
 
 1. identificação do serviço;
 2. headline;
@@ -273,38 +271,44 @@ A prioridade deve ser:
 5. CTA;
 6. fotografia real.
 
-A fotografia pode aparecer abaixo do bloco textual ou como fundo, desde que a legibilidade seja preservada.
+A fotografia pode aparecer abaixo do bloco textual ou integrada ao fundo, desde que o conteúdo continue legível.
 
 ---
 
 # 8. Tratamento das seções
 
-A página deve alternar visualmente entre áreas claras e áreas de maior densidade institucional, mantendo continuidade narrativa.
+A página deve alternar áreas de respiro e áreas de maior densidade institucional, preservando a continuidade da narrativa.
 
-## Seções claras
+### Base visual
 
-Usar branco/neutros para:
+**Cinza institucional + amarelo institucional + branco/neutros.**
+
+### Áreas claras
+
+Preferenciais para:
 
 - reconhecimento das situações;
 - explicação da solução;
-- oferta detalhada;
+- oferta;
 - FAQ.
 
-## Seções azuis
+### Áreas institucionais
 
-Usar azul-marinho institucional em momentos de:
+O cinza institucional pode criar maior densidade visual em:
 
-- confiança;
-- fechamento;
-- reforço de marca.
+- credibilidade;
+- reforço da marca;
+- fechamento.
 
-Não transformar todas as seções em fundos coloridos. O branco é necessário para criar descanso visual e permitir que o azul tenha força quando reaparecer.
+O amarelo deve funcionar como destaque, não como preenchimento indiscriminado de seções.
+
+Não utilizar azul-marinho como cor institucional da landing.
 
 ---
 
 # 9. Situações de compra
 
-A seção deve apresentar dois contextos visualmente equivalentes.
+Os dois públicos devem aparecer como contextos diferentes da mesma necessidade.
 
 ```text
 [Duas situações diferentes]
@@ -323,28 +327,15 @@ A seção deve apresentar dois contextos visualmente equivalentes.
           ENDEREÇO FISCAL
 ```
 
-### Regra de UI
+Os cards devem ter a mesma linguagem visual e não devem parecer planos ou produtos diferentes.
 
-Os cards não devem parecer planos diferentes.
-
-Não usar:
-
-- preços separados;
-- botões separados;
-- selos “opção 1/opção 2”;
-- cores diferentes para cada público.
-
-O design deve fazer os dois caminhos convergirem visualmente.
+Não usar preços, botões ou cores diferentes para cada situação.
 
 ---
 
 # 10. Seção da solução
 
-Esta seção deve funcionar como uma ponte visual entre problema e produto.
-
-### Direção
-
-Usar uma composição centralizada ou em duas colunas:
+A função visual é conectar as duas situações à mesma oferta.
 
 ```text
 NECESSIDADE                         SOLUÇÃO
@@ -356,35 +347,27 @@ um escritório físico               no CNPJ + correspondências
                                     + encomendas
 ```
 
-Evitar diagramas complexos. A relação deve ser entendida em poucos segundos.
+Evitar diagramas complexos. A relação deve ser entendida rapidamente.
 
 ---
 
 # 11. O que o serviço oferece
 
-Usar três itens principais, com ícones lineares simples e consistentes:
+Apresentar três itens principais, com linguagem visual consistente:
 
 1. endereço para utilização no CNPJ;
 2. recebimento de correspondências;
 3. gestão de encomendas.
 
-## Ícones
+Ícones lineares simples podem ser usados, desde que sejam apenas apoio visual e não substituam o conteúdo.
 
-Preferir ícones simples, de traço uniforme e sem estética de biblioteca tecnológica excessivamente genérica.
-
-A biblioteca escolhida para implementação deve permitir consistência de stroke e tamanho.
-
-Não usar ícones como substitutos de explicação.
+Não criar ícones ou elementos que representem benefícios não confirmados.
 
 ---
 
 # 12. Benefício de 35% nas salas de reunião
 
-Este benefício deve aparecer como **vantagem complementar**, e não como promessa de escritório.
-
-## Direção visual
-
-Criar um destaque menor conectado à seção de benefícios:
+O benefício deve aparecer como **vantagem complementar**, sem sugerir que o cliente está contratando um escritório ou possui uma sala garantida.
 
 ```text
 ┌───────────────────────────────────────────────────────┐
@@ -396,663 +379,334 @@ Criar um destaque menor conectado à seção de benefícios:
 └───────────────────────────────────────────────────────┘
 ```
 
-### Ênfase
+O número **35%** pode receber o amarelo institucional como elemento de destaque, respeitando contraste.
 
-**35%** pode receber a cor dourada oficial ou outra cor de destaque prevista no manual.
+Não informar quantidade de horas, salas específicas, horários, validade, cumulatividade ou condições de utilização que não estejam documentadas.
 
-Não usar selo de “desconto imperdível”.
-
-Não sugerir disponibilidade de sala.
-
-Não informar quantidade de horas, salas, horários, validade, cumulatividade ou condições de uso.
+Não usar selo de “desconto imperdível” ou linguagem de urgência.
 
 ---
 
 # 13. Credibilidade
 
-A seção deve ser visualmente mais institucional.
-
-## Composição recomendada
+A seção deve funcionar como prova de existência e estrutura real.
 
 ```text
                 POR QUE CONFIAR NO NVO?
 
-       [foto real do imóvel / estrutura]
+       [fotografia real da estrutura]
 
   [16 anos]       [imóvel próprio]       [licenças]
 ```
 
-Os três fatos devem ter peso semelhante.
+Os três fatos devem ter peso visual equilibrado:
 
-### 16 anos
+- **16 anos de mercado**;
+- **imóvel próprio**;
+- **licenças atualizadas**.
 
-Apresentar como fato, sem superlativo.
-
-### Imóvel próprio
-
-Apresentar como evidência de estrutura real.
-
-### Licenças atualizadas
-
-Apresentar como fato confirmado, mantendo possibilidade de comprovação posterior.
-
-### Fotografia
-
-Usar fotografia real do imóvel para conectar visualmente as provas à estrutura física. As fachadas fornecidas mostram o edifício de forma inequívoca. fileciteturn35file0L1-L6 fileciteturn35file1L7-L12
+Não adicionar números, selos, certificações, depoimentos ou outras provas que não estejam confirmados.
 
 ---
 
 # 14. Como funciona
 
-A interface deve ser extremamente simples porque o fluxo confirmado é apenas comercial:
+A UI não deve inventar um processo de contratação.
 
-```text
-[1] WhatsApp
-      ↓
-[2] Menu automático
-      ↓
-[3] Consultor
-```
+O único fluxo comercial confirmado é:
 
-Usar três etapas horizontais no desktop e verticais no mobile.
+**WhatsApp → menu automático → escolha do visitante → atendimento por consultor.**
 
-Não criar ícones ou etapas para:
+A interface pode representar essa passagem de maneira simples, mas etapas anteriores ou posteriores da contratação devem permanecer como **[INFORMAÇÃO A VALIDAR]** até confirmação.
 
-- documentação;
-- aprovação;
-- pagamento;
-- ativação;
-- prazo;
-- contrato;
-
-até que esses pontos sejam confirmados.
+Não criar cronogramas, prazos ou número de etapas sem fonte.
 
 ---
 
 # 15. Oferta e preço
 
-A oferta deve ser uma das áreas visualmente mais fortes da página.
-
-## Card de oferta
+A oferta deve ser visualmente simples e transparente.
 
 ```text
-┌────────────────────────────────────────────────────────┐
-│ ENDEREÇO FISCAL NVO                                    │
-│                                                        │
-│ R$ 99/mês                                               │
-│                                                        │
-│ • Endereço para utilização no CNPJ                     │
-│ • Recebimento de correspondências                      │
-│ • Gestão de encomendas                                  │
-│                                                        │
-│ 35% de desconto no uso das salas de reuniões           │
-│ para clientes de Endereço Fiscal                       │
-│                                                        │
-│ [ FALAR COM UM CONSULTOR PELO WHATSAPP ]               │
-└────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────┐
+│            ENDEREÇO FISCAL                │
+│                                           │
+│               R$ 99                       │
+│                 /mês                      │
+│                                           │
+│  Endereço para utilização no CNPJ         │
+│  + recebimento de correspondências        │
+│  + gestão de encomendas                   │
+│                                           │
+│ [Falar com um consultor pelo WhatsApp]   │
+└──────────────────────────────────────────┘
 ```
 
-## Hierarquia
+O amarelo institucional pode destacar o preço, mantendo contraste e coerência com o manual.
 
-1. nome do serviço;
-2. preço;
-3. o que está incluído;
-4. benefício complementar;
-5. CTA.
+Não utilizar:
 
-### Preço
-
-`R$ 99` deve ser o elemento numérico dominante.
-
-`/mês` deve ser claramente associado ao preço, mas com hierarquia menor.
-
-Não usar preço riscado, “de/por”, desconto de preço ou urgência porque nenhuma dessas condições foi confirmada.
+- preço riscado;
+- “de/por” sem condição confirmada;
+- contador;
+- escassez;
+- falsa urgência;
+- linguagem promocional agressiva.
 
 ---
 
-# 16. Botões e CTAs
+# 16. FAQ e objeções
+
+O FAQ deve ter aparência editorial e comercial, não de central de suporte.
+
+Accordion é recomendado no mobile quando facilitar a leitura e reduzir a altura da página.
+
+As perguntas devem seguir as objeções definidas na copy.
+
+Quando uma resposta depender de regra comercial, jurídica ou operacional ainda não confirmada, o conteúdo deve permanecer como **[INFORMAÇÃO A VALIDAR]**.
+
+---
+
+# 17. CTAs e botões
 
 ## CTA principal
 
 **Falar com um consultor pelo WhatsApp**
 
-Todos os CTAs principais devem ter a mesma função.
+É a única ação de conversão principal da página.
 
-## Forma
+## Estilo
 
-- botão com cantos moderadamente arredondados;
-- altura confortável para toque;
-- texto curto e legível;
-- peso tipográfico médio/semi-bold;
-- ícone do WhatsApp apenas se aprovado/adequado ao sistema visual;
-- verde reservado ao CTA associado ao WhatsApp.
+O botão deve possuir:
 
-### Não fazer
+- área clicável confortável;
+- contraste alto;
+- hierarquia clara;
+- raio de borda moderado;
+- tipografia LEIXO;
+- estado de foco visível;
+- estados de interação consistentes.
 
-- botões gigantes que dominem a tela inteira;
-- efeitos pulsantes;
-- animação contínua;
-- setas excessivas;
-- textos como “última chance”;
-- contadores.
+O verde do WhatsApp pode ser usado no botão ou em elementos diretamente associados ao canal, mas deve permanecer **funcional**, não institucional.
 
-## Estados
-
-Implementar visualmente:
-
-- default;
-- hover;
-- focus;
-- active;
-- disabled, caso tecnicamente necessário.
-
-O estado de focus precisa ser visível para acessibilidade.
+Não utilizar animação contínua, pulsação ou outros efeitos para forçar o clique.
 
 ---
 
-# 17. Estratégia visual para o WhatsApp
+# 18. Estratégia visual para o WhatsApp
 
-O WhatsApp deve ser reconhecido como **o próximo passo da decisão**, não como um elemento promocional invasivo.
+O WhatsApp deve ser percebido como continuação natural da jornada, não como interrupção.
 
-## Desktop
+### Desktop
 
-CTAs aparecem em pontos estratégicos:
+CTA no:
 
-1. Hero;
-2. oferta;
-3. CTA final.
+- Hero;
+- seção de oferta;
+- fechamento.
 
-O header pode conter um CTA de WhatsApp, desde que sua presença não transforme o header em uma faixa publicitária.
+Evitar excesso de botões flutuantes.
 
-## Mobile
+### Mobile
 
-Recomenda-se um **CTA persistente inferior**, porque o canal de conversão é único e a página é longa.
+Recomenda-se testar um CTA persistente discreto na parte inferior da tela.
 
-### Comportamento recomendado
+Ele deve:
 
-- fixado na parte inferior;
-- altura compacta;
-- respeitar safe area do dispositivo;
-- não cobrir conteúdo importante;
-- manter distância visual do conteúdo da página;
-- não aparecer como popup;
-- não pulsar;
-- desaparecer ou reduzir quando um CTA equivalente estiver imediatamente visível, se tecnicamente simples.
+- não cobrir conteúdo;
+- não bloquear FAQ;
+- possuir área de respiro;
+- não parecer pop-up;
+- permanecer visualmente subordinado ao conteúdo.
 
-### Justificativa
-
-Como o objetivo da página é iniciar uma conversa comercial e o visitante pode decidir em diferentes pontos da rolagem, o CTA persistente reduz a necessidade de voltar ao Hero.
-
-A persistência deve ser **discreta** para não produzir sensação de pressão.
-
----
-
-# 18. Header e navegação
-
-A landing não deve possuir navegação institucional extensa.
-
-## Desktop
-
-```text
-[LOGO]       O que é | Benefícios | Por que NVO | Dúvidas     [WhatsApp]
-```
-
-Os nomes finais das âncoras devem seguir a copy efetivamente implementada.
-
-### Regra
-
-As âncoras devem levar a pontos da própria página.
-
-Não incluir links externos que desviem da jornada, salvo requisitos legais ou institucionais indispensáveis.
-
-## Mobile
-
-Preferir:
-
-```text
-[LOGO]                         [WhatsApp]
-```
-
-Se a navegação por âncoras for necessária, utilizar menu compacto. Não transformar o mobile em um menu institucional.
+A decisão final deve ser validada em aparelhos reais, especialmente em telas pequenas.
 
 ---
 
 # 19. Espaçamento e ritmo visual
 
-A página deve respirar.
+A página deve ter ritmo generoso, especialmente no mobile.
 
-## Princípios
+Princípios:
 
-- seções com bastante espaço vertical;
-- largura de conteúdo limitada;
-- textos não ocupam toda a largura disponível;
-- cards não devem ficar encostados;
-- evitar excesso de divisórias;
-- usar alternância de superfícies para criar ritmo.
+- uma ideia principal por área visual;
+- seções claramente separadas;
+- largura de leitura controlada;
+- títulos com espaço suficiente;
+- CTAs sem elementos concorrentes;
+- evitar blocos longos de texto sem respiro.
 
-### Escala
-
-A implementação deve adotar uma escala consistente de espaçamento baseada em múltiplos pequenos, preferencialmente 4 ou 8 px.
-
-Valores exatos podem ser definidos no sistema de design durante a implementação, sem quebrar a proporção entre seções.
-
-### Container
-
-Desktop: conteúdo centralizado com largura máxima confortável para leitura e composição.
-
-Mobile: padding lateral consistente, evitando texto colado nas bordas.
+Não criar espaço vazio apenas para aumentar artificialmente o comprimento da página.
 
 ---
 
-# 20. Cards, bordas e sombras
+# 20. Mobile-first
 
-## Cards
+A implementação deve começar pelo mobile.
 
-Os cards devem ser discretos.
+Prioridades:
 
-### Recomendação
+1. headline legível;
+2. preço imediatamente compreensível;
+3. CTA fácil de tocar;
+4. fotografia real preservada;
+5. situações empilhadas;
+6. benefícios em sequência vertical;
+7. FAQ confortável para toque;
+8. CTA persistente sem obstrução.
 
-- fundo branco sobre superfície levemente contrastante;
-- borda fina ou sombra muito suave;
-- raio moderado;
-- padding generoso;
-- sem efeitos de elevação exagerados.
+Não utilizar quebras de linha fixas no H1.
 
-## Sombras
-
-Sombras devem comunicar separação de superfícies, não profundidade 3D.
-
-Evitar:
-
-- sombras muito escuras;
-- múltiplas sombras;
-- glow;
-- neon.
-
-## Bordas
-
-Preferir bordas neutras e discretas.
-
-Não usar bordas douradas em todos os cards. O dourado precisa continuar sendo um sinal de ênfase.
+As fotografias devem ser enquadradas individualmente para preservar seus elementos relevantes.
 
 ---
 
-# 21. Mobile-first
+# 21. Desktop
 
-A implementação deve ser projetada primeiro para largura móvel.
+Em desktop, o espaço horizontal deve ser usado para criar relações entre texto e fotografia sem transformar a página em uma sequência de painéis desconectados.
 
-## Prioridades
+### Grid
 
-1. leitura;
-2. compreensão;
-3. toque;
-4. velocidade;
-5. fotografia;
-6. decoração.
+Preferir largura máxima de conteúdo consistente e colunas proporcionais.
 
-### Hero
+O Hero pode utilizar aproximadamente 50/50 entre texto e fotografia.
 
-O texto vem antes da imagem se a imagem competir com a compreensão da proposta.
+Seções seguintes podem alternar entre:
 
-### Cards
+- conteúdo centralizado;
+- duas colunas;
+- três itens em linha quando houver exatamente três elementos;
+- imagem + conteúdo.
 
-Os dois contextos de compra passam de duas colunas para uma sequência vertical.
-
-### Benefícios
-
-Os três itens passam a uma coluna ou grid de duas colunas somente se a leitura continuar confortável.
-
-### Oferta
-
-O preço deve aparecer sem necessidade de rolagem dentro do card.
-
-### FAQ
-
-Uma coluna, com áreas de toque amplas.
-
-### CTA sticky
-
-Deve considerar a área inferior do navegador/dispositivo.
+Não criar assimetria apenas por tendência estética.
 
 ---
 
-# 22. Desktop
+# 22. Uso das fotografias na jornada de conversão
 
-Em desktop, o design deve usar espaço para criar uma experiência premium, mas sem transformar o serviço em algo artificialmente sofisticado.
+A fotografia acompanha a evolução da decisão:
 
-## Largura
+### Hero — reconhecimento
 
-A composição deve utilizar um container central e grids assimétricos somente quando ajudarem a narrativa.
+A fotografia real estabelece imediatamente a existência de uma estrutura física.
 
-## Hero
+### Credibilidade — confiança
 
-Texto e fotografia podem formar uma composição 45/55 ou 50/50.
+Outra fotografia/ângulo reforça a materialidade do NVO depois que a oferta já foi compreendida.
 
-## Situações
+### Benefício de sala de reunião — concretização
 
-Duas colunas equilibradas.
-
-## Credibilidade
-
-Imagem + três provas podem funcionar em composição horizontal.
-
-## Oferta
-
-Card central ou composição em duas áreas:
-
-- preço/serviço;
-- itens confirmados + CTA.
-
----
-
-# 23. Uso das fotografias na jornada de conversão
-
-As imagens devem cumprir funções diferentes em momentos diferentes.
-
-## 1. Hero — reconhecimento + realidade
-
-**Objetivo:** mostrar imediatamente que existe uma estrutura física real por trás da oferta.
-
-Usar uma fotografia de fachada atual e reconhecível.
-
-## 2. Confiança — prova
-
-**Objetivo:** reforçar a materialidade do NVO quando o visitante pergunta “posso confiar?”.
-
-Usar outro enquadramento real do imóvel, se disponível.
-
-## 3. Próximo passo — não repetir fotografia
-
-No fechamento, preferir composição tipográfica e de marca em vez de repetir a mesma fachada.
+Se houver fotografia real adequada de sala, ela pode ajudar a materializar o benefício de 35% de desconto, sem sugerir disponibilidade garantida ou contratação de escritório.
 
 ### Regra
 
-A fotografia não deve ser usada simplesmente porque “preenche espaço”. Cada aparição precisa responder a uma pergunta da jornada.
+Cada fotografia deve ter função narrativa. Não repetir imagens apenas para preencher espaço.
 
 ---
 
-# 24. Tratamento de imagens e performance
+# 23. Checklist de fidelidade visual
 
-Como a página deve ser rápida:
-
-- utilizar `next/image`;
-- definir dimensões/aspect ratio corretamente;
-- utilizar versões otimizadas das fotografias;
-- evitar imagens maiores que o necessário;
-- priorizar a imagem do Hero adequadamente;
-- usar `loading` apropriado para imagens abaixo da dobra;
-- não carregar várias fotografias em alta resolução simultaneamente.
-
-As fotografias originais devem ser preservadas como fonte, e versões otimizadas podem ser derivadas para web.
-
----
-
-# 25. Acessibilidade visual
-
-A implementação deve garantir:
-
-- contraste adequado;
-- foco visível;
-- áreas de toque adequadas;
-- headings sem saltos semânticos;
-- texto não incorporado em imagens;
-- alt text descritivo para fotografias relevantes;
-- decorativas com alt vazio quando apropriado;
-- não depender somente da cor para transmitir informação.
-
-O preço, por exemplo, deve continuar compreensível mesmo sem distinção cromática.
+- [ ] A identidade institucional usa **Amarelo Pantone 715 C** e **Cinza Pantone 440 C**. fileciteturn42file0L15-L15
+- [ ] O azul-marinho foi eliminado como cor institucional da landing.
+- [ ] Os valores digitais das cores foram obtidos das referências do manual.
+- [ ] A tipografia utilizada é **LEIXO**. fileciteturn42file0L16-L16
+- [ ] O arquivo oficial do logotipo foi utilizado.
+- [ ] A versão vertical foi priorizada quando adequada.
+- [ ] A versão horizontal foi usada apenas quando a aplicação da vertical apresentar dificuldade. fileciteturn42file0L14-L14
+- [ ] Não foram criadas novas versões ou composições do logotipo.
+- [ ] As versões monocromáticas seguem as aplicações previstas no manual. fileciteturn42file0L17-L17
+- [ ] As aplicações em negativo seguem as versões apresentadas no manual. fileciteturn42file0L18-L18
+- [ ] As fotografias reais do NVO são protagonistas da experiência.
+- [ ] Não foram utilizadas imagens genéricas de banco como substitutas.
+- [ ] Não foram criadas imagens artificiais do imóvel.
+- [ ] O verde do WhatsApp aparece somente como cor funcional do canal.
+- [ ] R$ 99/mês possui destaque sem falsa urgência.
+- [ ] O benefício de 35% está apresentado sem condições inventadas.
+- [ ] Os elementos de credibilidade são somente fatos confirmados.
+- [ ] O Hero comunica serviço, contexto, preço e ação principal.
+- [ ] O CTA principal permanece consistente.
+- [ ] O CTA mobile persistente, se implementado, não obstrui conteúdo.
+- [ ] A página continua visualmente reconhecível como NVO.
 
 ---
 
-# 26. Continuidade narrativa na UI
+# 24. Riscos de design
 
-A interface deve mudar visualmente o suficiente para evitar monotonia, mas não tanto que cada seção pareça pertencer a uma página diferente.
+## Parecer genérico de startup
 
-### Ritmo recomendado
+**Risco:** usar padrões visuais de SaaS, fintech ou startups que poderiam pertencer a qualquer marca.
 
-```text
-HERO
-↓
-CLARO — reconhecimento
-↓
-CLARO — solução
-↓
-CLARO — o que recebe
-↓
-AZUL — confiança
-↓
-CLARO — como funciona
-↓
-DESTAQUE — oferta/preço
-↓
-CLARO — objeções
-↓
-AZUL — CTA final
-↓
-RODAPÉ
-```
+**Controle:** cores oficiais NVO, LEIXO, logotipo oficial e fotografias reais.
 
-O visitante deve sentir progressão, não mudança de site.
+## Parecer de “landing de IA”
 
----
+**Risco:** excesso de efeitos, cards genéricos, microanimações e ilustrações abstratas.
 
-# 27. Elementos que não devem ser adicionados
+**Controle:** hierarquia editorial, fotografia real e interface simples.
 
-Sem nova validação, não adicionar:
+## Parecer de publicidade agressiva
 
-- depoimentos;
-- avaliações em estrelas;
-- números de clientes;
-- logos de clientes;
-- selos de certificação;
-- mapas interativos;
-- garantias;
-- promessas de aprovação;
-- resultados cadastrais;
-- argumentos tributários;
-- benefícios não confirmados;
-- prazo de ativação;
-- condições de pagamento;
-- fidelidade;
-- política de cancelamento;
-- documentação exigida;
-- quantidade de horas de sala;
-- disponibilidade de sala;
-- regras de correspondências/encomendas;
-- contadores;
-- escassez;
-- descontos adicionais.
+**Risco:** contadores, selos, urgência artificial e CTA piscando.
+
+**Controle:** preço transparente e comunicação racional.
+
+## Parecer de empresa distante
+
+**Risco:** interface excessivamente austera, sem conexão com a estrutura física.
+
+**Controle:** fotografias reais e uso dos fatos de credibilidade.
+
+## Parecer de dois produtos
+
+**Risco:** tratar empresa de fora de Natal e não utilização do endereço residencial como ofertas diferentes.
+
+**Controle:** dois contextos → mesma necessidade → Endereço Fiscal.
+
+## Parecer de “escritório incluso”
+
+**Risco:** fotografias ou composição da sala de reunião sugerirem que o cliente contratou um escritório ou possui sala garantida.
+
+**Controle:** apresentar o desconto de 35% como vantagem complementar.
+
+## Descaracterização da marca
+
+**Risco:** recuperar o azul-marinho ou criar uma paleta paralela.
+
+**Controle:** seguir o manual: **Amarelo Pantone 715 C + Cinza Pantone 440 C**. fileciteturn42file0L15-L15
 
 ---
 
-# 28. Checklist de fidelidade visual
+# 25. Decisões mantidas da estratégia e UX
 
-Antes de aprovar a implementação, verificar:
+A atualização do manual **não altera a estratégia comercial ou a arquitetura de conversão**.
 
-### Marca
+Mantêm-se:
 
-- [ ] O logotipo utilizado é o arquivo oficial.
-- [ ] Proporções do logo estão preservadas.
-- [ ] Área de proteção segue o manual.
-- [ ] Versão do logo sobre cada fundo está correta.
-- [ ] Cores institucionais correspondem ao manual.
-- [ ] Tipografia corresponde ao manual ou está explicitamente aprovada.
-- [ ] Nenhuma cor nova foi introduzida como se fosse cor oficial da marca.
-
-### Fotografia
-
-- [ ] As imagens principais são fotografias reais do NVO.
-- [ ] Não há banco de imagens substituindo o imóvel real.
-- [ ] Não há imagem gerada artificialmente representando o NVO.
-- [ ] As fotos não foram alteradas de forma que descaracterize o imóvel.
-- [ ] O tratamento de cor é discreto.
-- [ ] A fotografia do Hero continua reconhecível.
-
-### UI
-
-- [ ] Azul-marinho é a cor estrutural predominante.
-- [ ] Dourado é usado como ênfase, não como preenchimento indiscriminado.
-- [ ] Verde está reservado à ação WhatsApp.
-- [ ] Cards são discretos.
-- [ ] Sombras são suaves.
-- [ ] Bordas não são excessivas.
-- [ ] A escala de espaçamento é consistente.
-- [ ] A interface não parece um template genérico.
-
-### Conversão
-
-- [ ] O CTA principal é sempre a conversa pelo WhatsApp.
-- [ ] Não existem CTAs concorrentes com objetivos diferentes.
-- [ ] R$ 99/mês está claramente visível.
-- [ ] O benefício de 35% aparece sem condições inventadas.
-- [ ] O CTA sticky mobile não bloqueia conteúdo.
-- [ ] O CTA não usa pressão artificial.
-
-### Conteúdo
-
-- [ ] Nenhuma funcionalidade não confirmada foi adicionada.
-- [ ] Nenhum benefício jurídico/tributário não validado foi adicionado.
-- [ ] IPTU não aparece como argumento.
-- [ ] Não há depoimentos ou números não fornecidos.
-- [ ] Não há garantias ou promessas.
+- narrativa contínua: **Reconhecimento → Adequação → Compreensão → Concretização → Confiança → Redução de incerteza → Preço → Objeções → Conversão**;
+- duas situações de compra convergindo para uma única solução;
+- Endereço Fiscal por R$ 99/mês;
+- WhatsApp como conversão principal;
+- CTA: **Falar com um consultor pelo WhatsApp**;
+- 35% de desconto no uso das salas de reuniões para clientes de Endereço Fiscal;
+- 16 anos de mercado;
+- imóvel próprio;
+- licenças atualizadas;
+- transparência e ausência de falsa urgência;
+- uso prioritário de fotografias reais do NVO;
+- ausência de argumentos sobre IPTU nesta etapa.
 
 ---
 
-# 29. Riscos de design
+# 26. Pontos que permanecem dependentes de validação
 
-## Risco 1 — parecer uma landing genérica de IA
+O manual consultado confirma cores, tipografia, versões da marca, aplicações monocromáticas e aplicações em negativo. fileciteturn42file0L14-L18
 
-**Causa:** excesso de gradientes, cards, ícones, efeitos e layouts previsíveis.
+Antes da implementação final, ainda devem ser confirmados nos arquivos oficiais do projeto:
 
-**Prevenção:** fotografia real do NVO como ativo principal + tipografia forte + composição simples.
+- arquivo/licença web disponível para a família LEIXO;
+- arquivo final do logotipo em formato adequado para web;
+- versão específica a ser usada em cada fundo da interface;
+- valores digitais oficiais a serem convertidos para tokens CSS;
+- qualquer regra de área de proteção ou tamanho mínimo caso exista em material oficial adicional não consultado nesta etapa.
 
-## Risco 2 — parecer SaaS/fintech
-
-**Causa:** excesso de roxo, azul elétrico, glassmorphism, dashboards e elementos abstratos.
-
-**Prevenção:** usar as cores e elementos reais da marca e mostrar o imóvel físico.
-
-## Risco 3 — parecer um anúncio agressivo
-
-**Causa:** preço enorme em todos os lugares, botões pulsantes, urgência e escassez.
-
-**Prevenção:** preço transparente, mas integrado à hierarquia racional da oferta.
-
-## Risco 4 — parecer um coworking genérico
-
-**Causa:** fotos genéricas de pessoas trabalhando, notebooks e mesas como protagonistas.
-
-**Prevenção:** fotografias reais da estrutura do NVO e foco no serviço de Endereço Fiscal.
-
-## Risco 5 — transformar o desconto de 35% em promessa de escritório
-
-**Causa:** fotografia de sala + linguagem como “seu escritório” ou “sala garantida”.
-
-**Prevenção:** apresentar o desconto apenas como benefício para quando houver necessidade de utilização de sala de reunião.
-
-## Risco 6 — excesso de azul
-
-**Causa:** aplicar azul-marinho em todas as seções.
-
-**Prevenção:** alternância com superfícies claras e uso do azul em momentos de confiança e fechamento.
-
-## Risco 7 — excesso de ícones
-
-**Causa:** tentar transformar cada frase em um pictograma.
-
-**Prevenção:** ícones apenas quando facilitarem escaneabilidade.
-
-## Risco 8 — aparência antiga por excesso de elementos institucionais
-
-**Causa:** blocos muito densos, textos pequenos, muitas linhas e navegação extensa.
-
-**Prevenção:** linguagem visual contemporânea, espaço em branco e uma única ação de conversão.
-
-## Risco 9 — perder autenticidade da fotografia
-
-**Causa:** overlays fortes, recortes exagerados ou tratamento artificial.
-
-**Prevenção:** imagem real continua reconhecível e serve à narrativa.
-
----
-
-# 30. Especificação visual resumida para implementação
-
-```text
-MARCA
-NVO real, não reinterpretação.
-
-CORES
-Azul-marinho = estrutura
-Dourado = ênfase
-Verde = WhatsApp
-Neutros = descanso
-Códigos exatos = VALIDAR NO MANUAL
-
-TIPOGRAFIA
-Uma família principal + pesos distintos.
-Família oficial = VALIDAR NO MANUAL.
-
-IMAGENS
-Fotografia real do imóvel como prova.
-Sem banco de imagens como protagonista.
-
-LAYOUT
-Mobile-first.
-Container central.
-Muito espaço em branco.
-Grids simples.
-
-CARDS
-Poucos, limpos, borda/sombra discreta.
-
-CTA
-Um objetivo: WhatsApp.
-
-PREÇO
-R$ 99/mês, transparente e destacado.
-
-BENEFÍCIO
-35% de desconto em salas de reuniões para clientes de Endereço Fiscal.
-Sem condições inventadas.
-
-NARRATIVA VISUAL
-Reconhecimento → adequação → compreensão → concretização → confiança →
-redução de incerteza → preço → objeções → conversão.
-```
-
----
-
-# 31. Decisões bloqueadas até validação do manual
-
-As seguintes decisões não devem ser inventadas durante a implementação:
-
-1. códigos HEX oficiais da marca;
-2. família tipográfica oficial;
-3. pesos permitidos da tipografia;
-4. versões oficiais do logotipo;
-5. área de proteção do logotipo;
-6. tamanho mínimo do logotipo;
-7. aplicações sobre fundos;
-8. eventuais padrões gráficos oficiais;
-9. iconografia oficial, se existir;
-10. regras de uso do dourado/amarelo;
-11. regras de uso de cores auxiliares.
-
-Até receber o manual, utilizar os papéis cromáticos e as regras de composição desta direção, marcando as decisões dependentes do manual com `[VALIDAR NO MANUAL]`.
-
----
-
-# 32. Direção final
-
-A landing deve parecer uma **extensão digital do NVO**, não uma campanha publicitária genérica.
-
-O visitante deve perceber visualmente uma sequência simples:
-
-**“Existe uma necessidade → existe uma solução objetiva → existe uma estrutura real por trás dela → o preço é claro → se eu tiver dúvidas, posso conversar com um consultor.”**
-
-A fotografia real do imóvel prova presença física. O azul-marinho sustenta a identidade institucional. O dourado orienta a atenção. O verde identifica o WhatsApp. O espaço em branco reduz ruído. O preço transparente reduz desconfiança. E a repetição controlada do CTA conduz à conversa sem pressão.
-
-A regra de ouro da implementação é:
-
-> **Menos efeitos. Mais realidade. Menos propaganda. Mais clareza. Mais NVO.**
+Quando uma decisão não estiver estabelecida pelo manual, deve permanecer como **[VALIDAR NO MANUAL]** em vez de ser transformada em regra por inferência.
