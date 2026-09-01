@@ -1,17 +1,35 @@
+import { Header } from "@/components/Header";
+import { Hero } from "@/components/Hero";
+import { Situations } from "@/components/Situations";
+import { Solution } from "@/components/Solution";
+import { Features } from "@/components/Features";
+import { Trust } from "@/components/Trust";
+import { HowItWorks } from "@/components/HowItWorks";
+import { Offer } from "@/components/Offer";
+import { FAQ } from "@/components/FAQ";
+import { FinalCta } from "@/components/FinalCta";
+import { Footer } from "@/components/Footer";
+import { WhatsAppCta } from "@/components/WhatsAppCta";
+
 export default function HomePage() {
   return (
-    <main className="flex min-h-screen items-center justify-center px-6 py-16">
-      <section className="w-full max-w-2xl rounded-2xl border border-neutral-200 bg-white p-8 text-center shadow-sm sm:p-12">
-        <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-neutral-500">
-          NVO Coworking
-        </p>
-        <h1 className="text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">
-          Projeto inicial funcionando
-        </h1>
-        <p className="mx-auto mt-4 max-w-xl text-base leading-7 text-neutral-600">
-          Fundação técnica da landing page preparada para desenvolvimento.
-        </p>
-      </section>
-    </main>
+    <>
+      <Header />
+      <main>
+        <Hero />
+        <Situations />
+        <Solution />
+        <Features />
+        <Trust />
+        <HowItWorks />
+        <Offer />
+        <FAQ />
+        <FinalCta />
+      </main>
+      <Footer />
+      <div className="fixed inset-x-0 bottom-0 z-50 border-t border-[#332e2f]/10 bg-white/95 p-3 shadow-[0_-8px_30px_rgba(51,46,47,0.10)] backdrop-blur sm:hidden">
+        <WhatsAppCta fullWidth />
+      </div>
+    </>
   );
 }
