@@ -1,8 +1,26 @@
-import { Icon } from "./Icon";
-
 export function Solution() {
-  return <section className="bg-[#f7f6f4] px-5 py-16 sm:px-8 lg:px-10 lg:py-24"><div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
-    <div><p className="text-sm font-semibold uppercase tracking-[0.14em] text-[#F89F27]">A solução</p><h2 className="mt-3 text-3xl font-bold leading-tight tracking-tight text-[#332e2f] sm:text-4xl">A solução é ter um endereço empresarial sem assumir um escritório físico.</h2></div>
-    <div><p className="text-lg leading-8 text-[#332e2f]/80">O <strong className="text-[#332e2f]">Endereço Fiscal do NVO</strong> oferece um endereço para utilização no CNPJ, com recebimento de correspondências e gestão de encomendas.</p><div className="mt-8 grid gap-4 sm:grid-cols-3"><div className="border-t-2 border-[#F89F27] pt-4"><Icon name="pin" className="text-[#F89F27]"/><p className="mt-3 font-semibold text-[#332e2f]">Endereço empresarial</p><p className="mt-1 text-sm leading-6 text-[#332e2f]/65">Em Natal, para utilização no CNPJ.</p></div><div className="border-t-2 border-[#F89F27] pt-4"><Icon name="mail" className="text-[#F89F27]"/><p className="mt-3 font-semibold text-[#332e2f]">Correspondências</p><p className="mt-1 text-sm leading-6 text-[#332e2f]/65">Recebimento no endereço empresarial.</p></div><div className="border-t-2 border-[#F89F27] pt-4"><Icon name="package" className="text-[#F89F27]"/><p className="mt-3 font-semibold text-[#332e2f]">Encomendas</p><p className="mt-1 text-sm leading-6 text-[#332e2f]/65">Gestão das encomendas recebidas.</p></div></div></div>
-  </div></section>;
+  return (
+    <section className="bg-white px-5 py-16 sm:px-8 sm:py-20 lg:py-24">
+      <div className="mx-auto max-w-6xl">
+        <div className="max-w-3xl">
+          <p className="text-sm font-bold uppercase tracking-[0.14em] text-[#F89F27]">A mesma solução</p>
+          <h2 className="mt-3 text-3xl font-bold leading-tight tracking-[-0.02em] text-[#332e2f] sm:text-4xl">A solução é ter um endereço empresarial sem assumir um escritório físico.</h2>
+          <p className="mt-5 text-lg leading-8 text-[#332e2f]/70">O Endereço Fiscal do NVO oferece um endereço para utilização no CNPJ, com recebimento de correspondências e gestão de encomendas.</p>
+        </div>
+        <div className="mt-12 grid items-stretch gap-4 md:grid-cols-[1fr_auto_1fr]">
+          <div className="border border-[#332e2f]/12 p-7 sm:p-8">
+            <p className="text-sm font-bold uppercase tracking-[0.12em] text-[#332e2f]/55">Necessidade</p>
+            <p className="mt-3 text-xl font-semibold leading-8 text-[#332e2f]">Ter uma referência empresarial em Natal sem necessariamente manter um escritório físico ou utilizar o endereço residencial.</p>
+          </div>
+          <div className="flex items-center justify-center px-2 text-[#F89F27]" aria-hidden="true"><span className="text-3xl">→</span></div>
+          <div className="bg-[#332e2f] p-7 text-white sm:p-8">
+            <p className="text-sm font-bold uppercase tracking-[0.12em] text-[#F89F27]">Solução</p>
+            <p className="mt-3 text-xl font-semibold leading-8">Endereço Fiscal do NVO</p>
+            <p className="mt-3 leading-7 text-white/70">Endereço para utilização no CNPJ, recebimento de correspondências e gestão de encomendas.</p>
+          </div>
+        </div>
+        <p className="mt-8 text-xl font-bold text-[#332e2f]">É a mesma solução para situações diferentes.</p>
+      </div>
+    </section>
+  );
 }
