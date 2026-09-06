@@ -17,7 +17,7 @@ export function Hero() {
           </div>
         </div>
         <div className="relative min-h-[360px] lg:min-h-[650px]">
-          <Image src="/images/fachada-1.svg" alt="Fachada do NVO Coworking" fill priority sizes="(max-width: 1023px) 100vw, 50vw" className="object-cover object-center" />
+          <Image src="/images/Fachada%201.jpg" alt="Fachada do NVO Coworking" fill priority sizes="(max-width: 1023px) 100vw, 50vw" className="object-cover object-center" />
           <div className="absolute bottom-0 left-0 right-0 h-2 bg-[#F89F27]" aria-hidden="true" />
         </div>
       </div>

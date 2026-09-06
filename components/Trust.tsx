@@ -11,7 +11,7 @@ export function Trust() {
     <section className="bg-[#332e2f] px-5 py-16 text-white sm:px-8 sm:py-20 lg:py-24">
       <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:gap-16">
         <div className="relative min-h-[360px] overflow-hidden sm:min-h-[480px]">
-          <Image src="/images/fachada-2.svg" alt="Estrutura do NVO Coworking" fill sizes="(max-width: 1023px) 100vw, 45vw" className="object-cover object-center" />
+          <Image src="/images/Fachada%202.jpg" alt="Estrutura do NVO Coworking" fill sizes="(max-width: 1023px) 100vw, 45vw" className="object-cover object-center" />
           <div className="absolute bottom-0 left-0 right-0 h-2 bg-[#F89F27]" aria-hidden="true" />
         </div>
         <div>
